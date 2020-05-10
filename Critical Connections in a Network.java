@@ -36,6 +36,7 @@ class Solution {
                 //Where Tarjan's Algo kicks in
                 //Updates the lowTimes if a back edge was discovered
                 lowTimes[currNode] = Math.min(lowTimes[currNode], lowTimes[neighbor]);
+                //^Back propigate for cycles that we find
                 if(discovery[currNode] < lowTimes[neighbor])
                     criticalConnections.add(Arrays.asList(currNode, neighbor));
             }
