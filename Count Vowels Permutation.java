@@ -1,5 +1,5 @@
 public class Main
-{
+{ 
     public int countVowelPermutation(int n) {
         
         //We use the mod when the values get too big
